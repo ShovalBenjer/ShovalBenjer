@@ -4,19 +4,19 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Shoval+Benjer!;" />
 </h1>
 
-<h3 align="center">A highly ambitious Data Science student from Israel 🇮🇱</h3>
+<h3 align="center">Driven Data Science Student | Passionate about Turning Data into Insights | IL </h3>
 
 <br/>
 
 <div align="center">
  
- 🔭 I’m currently working on **Machine Learning projects from Kaggle**
- 
- 🌱 I’m currently learning **algorithms design,nlp,cnns,transformers,aws cloud service**
+🔭 I’m currently working on Machine Learning projects, including advanced regression techniques and football stats analysis using Selenium.
 
-💬 Ask me about **Python, Pandas, SQL, PowerBI, or anything [here](https://github.com/shovalbenjer/shovalbenjer/issues)**
+🌱 I’m currently learning cloud computing with IBM on edX, quantum algorithms, and applying NLP in data analysis projects.
 
-⚡ Fun fact **I'm passionate about drawing conclusions from data and presenting insights effectively**
+💬 Ask me about Python, Pandas, SQL, Optuna, PowerBI, or any of my ongoing projects here
+
+⚡ Fun fact I’m driven by the challenge of extracting key insights from complex datasets and turning them into actionable strategies.
 
  </div>
  
@@ -37,8 +37,10 @@
 <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=python,r,sql,excel,powerbi,orange" />
-    <img src="https://skillicons.dev/icons?i=pandas,numpy,matplotlib,seaborn,scikit,flask,c" /><br>
+<img src="https://skillicons.dev/icons?i=python,r,sql,excel,powerbi,orange" />
+<img src="https://skillicons.dev/icons?i=pandas,numpy,matplotlib,seaborn,scikit,flask,c,selenium" /><br>
+<img src="https://skillicons.dev/icons?i=git,github,aws,java,jupyter" />
+
 </div>
 
 <br/>

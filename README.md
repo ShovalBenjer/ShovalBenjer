@@ -7,13 +7,14 @@
 <br/>
 <div align="center">
     
-🔭 I’m currently working on Machine Learning projects, including advanced regression techniques and football stats analysis using Selenium.
+🔭 I’m currently working on Machine Learning projects, focusing on deep learning models using TensorFlow and PyTorch, including predictive analysis for the banking sector and football image processing.
 
-🌱 I’m currently learning cloud computing with IBM on edX, quantum algorithms, and applying NLP in data analysis projects.
+🌱 I’m learning cloud computing with IBM on edX, quantum algorithms, and further exploring NLP applications in data analysis projects.
 
-💬 Ask me about Python, Pandas, SQL, Optuna, PowerBI, or any of my ongoing projects here
+💬 Ask me about Python, Pandas, SQL, Optuna, PowerBI, or any of my ongoing projects here.
 
-⚡ Fun fact I’m driven by the challenge of extracting key insights from complex datasets and turning them into actionable strategies.
+⚡ Fun fact: I'm fascinated by the challenge of turning complex datasets into actionable strategies, and I love exploring the cutting-edge world of quantum algorithms and time crystals.
+
  </div>
  
 <div align="center"> 

@@ -7,14 +7,13 @@
 <br/>
 <div align="center">
     
-🔭 I’m currently working on Machine Learning projects, focusing on deep learning models using TensorFlow and PyTorch, including predictive analysis for the banking sector and football image processing.
+🔭 I’m currently working on Machine Learning projects, including real-time hand-tracking apps for accessibility, predictive analysis for the banking sector, and football image processing using TensorFlow, PyTorch, and MediaPipe.
 
-🌱 I’m learning cloud computing with IBM on edX, quantum algorithms, and further exploring NLP applications in data analysis projects.
+🌱 I’m exploring deep learning models for computer vision and gesture recognition, advancing my skills in Spark for big data analysis, and researching innovative solutions for phantom limb pain treatment.
 
-💬 Ask me about Python, Pandas, SQL, Optuna, PowerBI, or any of my ongoing projects here.
+💬 Ask me about Python, Pandas, SQL, Optuna, Spark, PowerBI, or any of my ongoing projects in accessibility technology or predictive modeling.
 
-⚡ Fun fact: I'm fascinated by the challenge of turning complex datasets into actionable strategies, and I love exploring the cutting-edge world of quantum algorithms and time crystals.
-
+⚡ Fun fact: I enjoy transforming complex problems into impactful solutions and diving into emerging technologies like quantum algorithms and neurofeedback systems.
  </div>
  
 <div align="center"> 
@@ -30,16 +29,7 @@
 </div>
 
  <hr/>
- 
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
-<br/>
-<div align="center">
-<img src="https://skillicons.dev/icons?i=python,r,sql,excel,powerbi,orange" />
-<img src="https://skillicons.dev/icons?i=pandas,numpy,matplotlib,seaborn,scikit,flask,c,selenium" /><br>
-<img src="https://skillicons.dev/icons?i=git,github,aws,java,jupyter" />
-
-</div>
-
+ <h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2> <br/> <div align="center"> <img src="https://skillicons.dev/icons?i=python,r,sql,excel,powerbi,orange" /> <img src="https://skillicons.dev/icons?i=pandas,numpy,matplotlib,seaborn,scikit,flask,c,spark" /><br> <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,mediapipe,selenium,git,github,aws,jupyter" /> </div>
 <br/>
 <hr/>
 

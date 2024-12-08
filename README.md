@@ -1,7 +1,7 @@
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=shovalbenjer.shovalbenjer" />
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Welcome+Aboard!+👋;+I'm+Shoval+Benjer!;Follow+Along+For+My+Projects;Feel+Free+To+Reach+Out;Go+Ahead+Contribute" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Shalom+👋;Im+Inside+The+Matrix;Please+Help+Me+Get+Out;Feel+Free+To+Reach+Out;Go+Ahead+and+Contribute" />
 </h1>
 
 💬 Ask me about Python, SQL, , Spark, PowerBI,TensorFlow, Computer VIsion Issues or any of my ongoing projects in accessibility technology or predictive modeling.

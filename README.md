@@ -3,18 +3,8 @@
 <h1 align="center">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Welcome+Aboard!+👋;+I'm+Shoval+Benjer!;Follow+Along+For+My+Projects;Feel+Free+To+Reach+Out;Go+Ahead+Contribute" />
 </h1>
-<h3 align="center">Driven Data Science Student | Passionate about Turning Data into Insights | IL </h3>
-<br/>
-<div align="center">
-    
-🔭 I’m currently working on Machine Learning projects, including real-time hand-tracking apps for accessibility, predictive analysis for the banking sector, and football image processing using TensorFlow, PyTorch, and MediaPipe.
 
-🌱 I’m exploring deep learning models for computer vision and gesture recognition, advancing my skills in Spark for big data analysis, and researching innovative solutions for phantom limb pain treatment.
-
-💬 Ask me about Python, Pandas, SQL, Optuna, Spark, PowerBI, or any of my ongoing projects in accessibility technology or predictive modeling.
-
-⚡ Fun fact: I enjoy transforming complex problems into impactful solutions and diving into emerging technologies like quantum algorithms and neurofeedback systems.
- </div>
+💬 Ask me about Python, SQL, , Spark, PowerBI,TensorFlow, Computer VIsion Issues or any of my ongoing projects in accessibility technology or predictive modeling.
  
 <div align="center"> 
   <a href="mailto:Shovalb9@gmail.com">

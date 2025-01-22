@@ -28,6 +28,12 @@
   <table>
     <tr>
       <td align="center">
+        <img src="phantomreach.gif" alt="PhantomReach" height="150"/>
+        <br/>
+        <a href="#"><b>PhantomReach</b></a>
+        <p>AR-based model with pose detection, achieving 95% accuracy and under 100ms latency.</p>
+      </td>
+      <td align="center">
         <img src="solosolve%20in%20a%20nutshell.gif" alt="SoloSolve AI" height="150"/>
         <br/>
         <a href="https://github.com/solosolve-ai/solosolve-ai"><b>SoloSolve AI</b></a>
@@ -39,14 +45,14 @@
         <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction"><b>Bank Product Changes</b></a>
         <p>Built time-series models for accurate bank product predictions.</p>
       </td>
+    </tr>
+    <tr>
       <td align="center">
         <img src="HOUSING.png" alt="Housing Price Prediction" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle"><b>Housing Price Prediction</b></a>
         <p>Top 6% Kaggle project with advanced regression techniques.</p>
       </td>
-    </tr>
-    <tr>
       <td align="center">
         <img src="DATABASE.jpg" alt="Catering Company Management" height="150"/>
         <br/>
@@ -59,6 +65,8 @@
         <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project"><b>Soccer Market Prediction</b></a>
         <p>ML model for soccer player market analysis.</p>
       </td>
+    </tr>
+    <tr>
       <td align="center">
         <img src="GUI.png" alt="Warehouse Management" height="150"/>
         <br/>

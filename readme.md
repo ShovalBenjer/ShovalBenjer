@@ -24,70 +24,49 @@
 
 <h2 align="center">🚀 Projects 🚀</h2>
 <br/>
-<div align="left">
-  <h3>Current Projects:</h3>
-  <ul>
-    <li>
-      <img src="solosolve%20in%20a%20nutshell.gif" height="20" alt="SoloSolve AI"> 
-      <a href="https://github.com/solosolve-ai/solosolve-ai">SoloSolve AI: AI-Powered Complaint Management System</a>
-      <br/>
-      <em>November 2024 - Current</em>
-      <ul>
-        <li>Designed an AI-driven complaint management system, achieving 40% faster complaint resolutions and a 90% first-time resolution rate using Flask, PostgreSQL, and React.</li>
-        <li>Conducted exploratory data analysis with clustering on the CFPB US federal dataset with Apache Spark and Kafka for large-scale data processing.</li>
-        <li>Built an NLP pipeline using Hugging Face transformers for sentiment analysis and complaint classification, integrated with real-time tracking with GPU acceleration.</li>
-      </ul>
-    </li>
-  </ul>
-
-  <h3>Past Projects:</h3>
-  <ul>
-    <li>
-      <img src="BANKING.png" height="20" alt="Bank Product Changes">
-      <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction">Predicting Bank Product Changes Using Time-Series Data</a>
-      <br/>
-      <em>August 2024 - September 2024</em>
-      <ul>
-        <li>Built multivariate time-series models (LightGBM, TSMixer) with Optuna-tuned hyperparameters, achieving high-accuracy product predictions via time-based cross-validation.</li>
-      </ul>
-    </li>
-    <li>
-      <img src="HOUSING.png" height="20" alt="Kaggle House Pricing">
-      <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle">House Pricing Machine Learning Regression Competition by Kaggle</a>
-      <br/>
-      <em>May 2024 - August 2024</em>
-      <ul>
-        <li>Ranked Top 6% of 6,300 submissions (RMSE: 0.08 on test results) using advanced regression, feature engineering, and hyperparameter tuning and cross-validation.</li>
-      </ul>
-    </li>
-    <li>
-      <img src="DATABASE.jpg" height="20" alt="Catering Company Database">
-      <a href="https://github.com/ShovalBenjer/Catering_Company_Management_System">Database for Catering Company Management System</a>
-      <br/>
-      <em>December 2023 - April 2024</em>
-      <ul>
-        <li>Improved HR, inventory, and event module efficiency through optimized SQL scripts.</li>
-      </ul>
-    </li>
-    <li>
-      <img src="AI.png" height="20" alt="Soccer Market Prediction">
-      <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project">Soccer Player Market Value Prediction Using Machine Learning</a>
-      <br/>
-      <em>December 2023 - April 2024</em>
-      <ul>
-        <li>Analyzed a Perceptron-based ML model with multivariate comparisons.</li>
-      </ul>
-    </li>
-    <li>
-      <img src="GUI.png" height="20" alt="Warehouse Management">
-      <a href="https://github.com/ShovalBenjer/Manage-Warehouse-OOP-Python">Warehouse Management System Developer (Python, OOP)</a>
-      <br/>
-      <em>April 2022 - July 2022</em>
-      <ul>
-        <li>Built a console-based system for inventory, orders, and supplier management using OOP principles and robust data handling.</li>
-      </ul>
-    </li>
-  </ul>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="solosolve%20in%20a%20nutshell.gif" alt="SoloSolve AI" height="150"/>
+        <br/>
+        <a href="https://github.com/solosolve-ai/solosolve-ai"><b>SoloSolve AI</b></a>
+        <p>AI-driven system achieving faster resolutions with NLP and clustering tools.</p>
+      </td>
+      <td align="center">
+        <img src="BANKING.png" alt="Bank Product Changes" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction"><b>Bank Product Changes</b></a>
+        <p>Built time-series models for accurate bank product predictions.</p>
+      </td>
+      <td align="center">
+        <img src="HOUSING.png" alt="Housing Price Prediction" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle"><b>Housing Price Prediction</b></a>
+        <p>Top 6% Kaggle project with advanced regression techniques.</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="DATABASE.jpg" alt="Catering Company Management" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Catering_Company_Management_System"><b>Catering Management</b></a>
+        <p>Optimized SQL scripts for HR and inventory modules.</p>
+      </td>
+      <td align="center">
+        <img src="AI.png" alt="Soccer Market Prediction" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project"><b>Soccer Market Prediction</b></a>
+        <p>ML model for soccer player market analysis.</p>
+      </td>
+      <td align="center">
+        <img src="GUI.png" alt="Warehouse Management" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Manage-Warehouse-OOP-Python"><b>Warehouse Management</b></a>
+        <p>OOP-based inventory and order system in Python.</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <hr/>

@@ -76,12 +76,3 @@
     </tr>
   </table>
 </div>
-
-<hr/>
-<div align="center">
-  <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/shovalbenjer/shovalbenjer/output/github-contribution-grid-snake.svg" />
-  <br/><br/><br/>
-</div>
-
-<br/>

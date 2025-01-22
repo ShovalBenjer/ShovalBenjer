@@ -28,8 +28,8 @@
   <h3>Current Projects:</h3>
   <ul>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="SoloSolve AI"> 
-      <a href="#">SoloSolve AI: AI-Powered Complaint Management System</a>
+      <img src="solosolve%20in%20a%20nutshell.gif" height="20" alt="SoloSolve AI"> 
+      <a href="https://github.com/solosolve-ai/solosolve-ai">SoloSolve AI: AI-Powered Complaint Management System</a>
       <br/>
       <em>November 2024 - Current</em>
       <ul>
@@ -43,8 +43,8 @@
   <h3>Past Projects:</h3>
   <ul>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="Bank Product Changes">
-      <a href="#">Predicting Bank Product Changes Using Time-Series Data</a>
+      <img src="BANKING.png" height="20" alt="Bank Product Changes">
+      <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction">Predicting Bank Product Changes Using Time-Series Data</a>
       <br/>
       <em>August 2024 - September 2024</em>
       <ul>
@@ -52,8 +52,8 @@
       </ul>
     </li>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="Kaggle House Pricing">
-      <a href="#">House Pricing Machine Learning Regression Competition by Kaggle</a>
+      <img src="HOUSING.png" height="20" alt="Kaggle House Pricing">
+      <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle">House Pricing Machine Learning Regression Competition by Kaggle</a>
       <br/>
       <em>May 2024 - August 2024</em>
       <ul>
@@ -61,8 +61,8 @@
       </ul>
     </li>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="Catering Company Database">
-      <a href="#">Database for Catering Company Management System</a>
+      <img src="DATABASE.jpg" height="20" alt="Catering Company Database">
+      <a href="https://github.com/ShovalBenjer/Catering_Company_Management_System">Database for Catering Company Management System</a>
       <br/>
       <em>December 2023 - April 2024</em>
       <ul>
@@ -70,8 +70,8 @@
       </ul>
     </li>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="Soccer Market Prediction">
-      <a href="#">Soccer Player Market Value Prediction Using Machine Learning</a>
+      <img src="AI.png" height="20" alt="Soccer Market Prediction">
+      <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project">Soccer Player Market Value Prediction Using Machine Learning</a>
       <br/>
       <em>December 2023 - April 2024</em>
       <ul>
@@ -79,8 +79,8 @@
       </ul>
     </li>
     <li>
-      <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" height="20" alt="Warehouse Management">
-      <a href="#">Warehouse Management System Developer (Python, OOP)</a>
+      <img src="GUI.png" height="20" alt="Warehouse Management">
+      <a href="https://github.com/ShovalBenjer/Manage-Warehouse-OOP-Python">Warehouse Management System Developer (Python, OOP)</a>
       <br/>
       <em>April 2022 - July 2022</em>
       <ul>

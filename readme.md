@@ -1,14 +1,3 @@
-<p align="center">
-  <a href="https://phantom-reach-poc.lovable.app/">
-    <img src="https://img.shields.io/badge/Phantom%20Reach-Click Demo-green?style=for-the-badge" alt="Phantom Reach">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://solosolve-ai-demo.lovable.app/">
-    <img src="https://img.shields.io/badge/SoloSolve%20AI-Visit POC-green?style=for-the-badge" alt="SoloSolve AI">
-  </a>
-</p>
-
-
 <div align="center"> 
     <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=shovalbenjer.shovalbenjer" />
 </div>
@@ -42,13 +31,21 @@
         <img src="phantomreach.gif" alt="PhantomReach" height="150"/>
         <br/>
         <a href="#"><b>PhantomReach</b></a>
-        <p>AR-based model with pose detection, achieving 95% accuracy and under 100ms latency.</p>
+        <p>AR-based model with pose detection, achieving 95% accuracy and under 100ms latency.
+         <a href="https://phantom-reach-poc.lovable.app/">
+    <img src="https://img.shields.io/badge/Phantom%20Reach-Click Demo-green?style=for-the-badge" alt="Phantom Reach">
+  </a>
+        </p>
       </td>
       <td align="center">
         <img src="solosolve%20in%20a%20nutshell.gif" alt="SoloSolve AI" height="150"/>
         <br/>
         <a href="https://github.com/solosolve-ai/solosolve-ai"><b>SoloSolve AI</b></a>
-        <p>AI-driven system achieving faster resolutions with NLP and clustering tools.</p>
+        <p>AI-driven system achieving faster resolutions with NLP and clustering tools.
+          <a href="https://solosolve-ai-demo.lovable.app/">
+    <img src="https://img.shields.io/badge/SoloSolve%20AI-Visit POC-green?style=for-the-badge" alt="SoloSolve AI">
+  </a>
+        </p>
       </td>
       <td align="center">
         <img src="BANKING.png" alt="Bank Product Changes" height="150"/>

@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://phantom-reach-poc.lovable.app/">
+    <img src="https://img.shields.io/badge/Phantom%20Reach-Visit-blue?style=for-the-badge" alt="Phantom Reach">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://solosolve-ai-demo.lovable.app/">
+    <img src="https://img.shields.io/badge/SoloSolve%20AI-Visit-green?style=for-the-badge" alt="SoloSolve AI">
+  </a>
+</p>
+
+
 <div align="center"> 
     <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=shovalbenjer.shovalbenjer" />
 </div>

@@ -22,7 +22,7 @@
 <br/>
 <hr/>
 
-<h2 align="center">🚀 Projects 🚀</h2>
+<h2 align="center">🚀 Past Work 🚀</h2>
 <br/>
 <div align="center">
   <table>

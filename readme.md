@@ -37,8 +37,9 @@
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height="200" src="https://github-readme-stats.vercel.app/api?username=ShovalBenjer&show_icons=true&theme=cobalt&card_width=320" />
   </a>
-
 </div>
+
+
 
 <hr/>
 
@@ -47,59 +48,109 @@
 <div align="center">
   <table>
     <tr>
+      <!-- PhantomReach -->
       <td align="center">
         <img src="phantomreach.gif" alt="PhantomReach project animation" height="150"/>
         <br/>
-        <a href="#"><b>PhantomReach</b></a>
-        <p>AR-based model with pose detection, achieving 95% accuracy and under 100ms latency.
+        <a href="https://github.com/phantomreach/phantom-reach-poc"><b>PhantomReach</b></a>
+        <p>
+          AR-based model with pose detection, achieving 95% accuracy and under 100ms latency.
+          <br/>
           <a href="https://phantom-reach-poc.lovable.app/">
             <img src="https://img.shields.io/badge/Phantom%20Reach-Click%20Demo-green?style=for-the-badge" alt="Phantom Reach Demo Badge" />
           </a>
         </p>
+        <!-- Repo Card for PhantomReach -->
+        <a href="https://github.com/phantomreach/phantom-reach-poc">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=phantomreach&repo=phantom-reach-poc&theme=cobalt" alt="PhantomReach Repo Card" />
+        </a>
       </td>
+      <!-- SoloSolve AI -->
       <td align="center">
-        <img src="solosolve%20in%20a%20nutshell.gif" alt="SoloSolve AI project animation" height="150"/>
+        <img src="solosolve in a nutshell.gif" alt="SoloSolve AI project animation" height="150"/>
         <br/>
-        <a href="https://github.com/solosolve-ai/solosolve-ai"><b>SoloSolve AI</b></a>
-        <p>AI-driven system achieving faster resolutions with NLP and clustering tools.
+        <a href="https://github.com/solosolve-ai/solosolve-ai-demo"><b>SoloSolve AI</b></a>
+        <p>
+          AI-driven system achieving faster resolutions with NLP and clustering tools.
+          <br/>
           <a href="https://solosolve-ai-demo.lovable.app/">
             <img src="https://img.shields.io/badge/SoloSolve%20AI-Visit%20POC-green?style=for-the-badge" alt="SoloSolve AI POC Badge" />
           </a>
         </p>
+        <!-- Repo Card for SoloSolve AI -->
+        <a href="https://github.com/solosolve-ai/solosolve-ai-demo">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=solosolve-ai&repo=solosolve-ai-demo&theme=cobalt" alt="SoloSolve AI Repo Card" />
+        </a>
       </td>
+      <!-- Bank Product Changes -->
       <td align="center">
         <img src="BANKING.png" alt="Bank Product Changes project" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction"><b>Bank Product Changes</b></a>
         <p>Built time-series models for accurate bank product predictions.</p>
+        <!-- Repo Card for Bank Product Changes -->
+        <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Bank-Change-Prediction&theme=cobalt" alt="Bank Product Changes Repo Card" />
+        </a>
       </td>
     </tr>
     <tr>
+      <!-- Housing Price Prediction -->
       <td align="center">
         <img src="HOUSING.png" alt="Housing Price Prediction project" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle"><b>Housing Price Prediction</b></a>
         <p>Top 6% Kaggle project with advanced regression techniques.</p>
+        <!-- Repo Card for Housing Price Prediction -->
+        <a href="https://github.com/ShovalBenjer/Housing_Price_Prediction_Advanced_Regresson_Kaggle">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Housing_Price_Prediction_Advanced_Regresson_Kaggle&theme=cobalt" alt="Housing Price Prediction Repo Card" />
+        </a>
       </td>
+      <!-- Catering Management -->
       <td align="center">
         <img src="DATABASE.jpg" alt="Catering Management project" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Catering_Company_Management_System"><b>Catering Management</b></a>
         <p>Optimized SQL scripts for HR and inventory modules.</p>
+        <!-- Repo Card for Catering Management -->
+        <a href="https://github.com/ShovalBenjer/Catering_Company_Management_System">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Catering_Company_Management_System&theme=cobalt" alt="Catering Management Repo Card" />
+        </a>
       </td>
+      <!-- Soccer Market Prediction -->
       <td align="center">
         <img src="AI.png" alt="Soccer Market Prediction project" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project"><b>Soccer Market Prediction</b></a>
         <p>ML model for soccer player market analysis.</p>
+        <!-- Repo Card for Soccer Market Prediction -->
+        <a href="https://github.com/ShovalBenjer/CS_188-Introduction-to-Artificial-Intelligence-Final_Project">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=CS_188-Introduction-to-Artificial-Intelligence-Final_Project&theme=cobalt" alt="Soccer Market Prediction Repo Card" />
+        </a>
       </td>
     </tr>
     <tr>
+      <!-- Warehouse Management -->
       <td align="center">
         <img src="GUI.png" alt="Warehouse Management project" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Manage-Warehouse-OOP-Python"><b>Warehouse Management</b></a>
         <p>OOP-based inventory and order system in Python.</p>
+        <!-- Repo Card for Warehouse Management -->
+        <a href="https://github.com/ShovalBenjer/Manage-Warehouse-OOP-Python">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Manage-Warehouse-OOP-Python&theme=cobalt" alt="Warehouse Management Repo Card" />
+        </a>
+      </td>
+      <!-- Algorithms / Dynamic Programming -->
+      <td align="center">
+        <img src="algorithms.png" alt="Algorithms & Dynamic Programming project" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Algorithms_DynamicProgramming_Codechef_Competition_Submissions"><b>Algorithms DP Submissions</b></a>
+        <p>Codechef competition submissions with dynamic programming algorithms.</p>
+        <!-- Repo Card for Algorithms DP -->
+        <a href="https://github.com/ShovalBenjer/Algorithms_DynamicProgramming_Codechef_Competition_Submissions">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Algorithms_DynamicProgramming_Codechef_Competition_Submissions&theme=cobalt" alt="Algorithms DP Repo Card" />
+        </a>
       </td>
     </tr>
   </table>

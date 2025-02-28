@@ -19,7 +19,7 @@
 <h2 align="center">⚒️ Languages - Frameworks - Tools ⚒️</h2>
 <br/>
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,mysql,mongodb,fastapi,docker,tailwind,postgres,kafka,html,css,nodejs,react,ts,tensorflow,pytorch" alt="Languages, Frameworks, and Tools Icons" />
+  <img src="https://skillicons.dev/icons?i=python,mysql,fastapi,docker,tailwind,postgres,kafka,html,css,nodejs,react,ts,tensorflow,pytorch" alt="Languages, Frameworks, and Tools Icons" />
   <br/>
   <hr/>
 </div>

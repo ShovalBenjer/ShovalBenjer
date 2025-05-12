@@ -82,6 +82,18 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=solosolve-ai&repo=solosolve-ai-demo&theme=cobalt" alt="SoloSolve AI Repo Card" />
         </a>
       </td>
+            <!-- Big Data Stack with PySpark -->
+      <td align="center">
+        <img src="https://raw.githubusercontent.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache/main/assets/spark_cluster.png" alt="Big Data Stack with PySpark" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (PySpark)</b></a>
+        <p>
+          End-to-end big data processing with Spark, Hadoop, and Apache stack on local and cloud clusters.
+        </p>
+        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Bigdata_Pyspark_Spark_Hadoop_Apache&theme=cobalt" alt="Big Data Stack Repo Card" />
+        </a>
+      </td>
       <!-- Bank Product Changes -->
       <td align="center">
         <img src="BANKING.png" alt="Bank Product Changes project" height="150"/>

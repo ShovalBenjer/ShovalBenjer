@@ -84,7 +84,7 @@
       </td>
             <!-- Big Data Stack with PySpark -->
       <td align="center">
-        <img src="https://raw.githubusercontent.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache/main/assets/spark_cluster.png" alt="Big Data Stack with PySpark" height="150"/>
+        <img src="https://github.com/ShovalBenjer/ShovalBenjer/blob/main/plotly_real-time_simulation_demo.gif" alt="Big Data Stack with PySpark" height="150"/>
         <br/>
         <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (PySpark)</b></a>
         <p>

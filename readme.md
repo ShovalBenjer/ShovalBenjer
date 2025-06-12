@@ -1,6 +1,4 @@
-Of course! I've added your "Time Twist Visualizer" project to the top of your "Past Work" section and reorganized the table for a clean, balanced layout.
-
-Here is the updated code for your README:
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=ocr+a&weight=600&size=24&letterSpacing=1&duration=4000&pause=800&color=00FF41&background=0A0A0A00&multiline=true&width=1000&height=500&lines=The+Matrix+is+everywhere+%E2%80%94+even+in+your+models.++++;Im+Shoval%2C+aged+27++with+B.Sc+in++Data+Science.;Exploring+biz+strategies+with+harmonics.+++;Sometimes+I+just+want+Gordon+Ramsay+AI.++++;Football+sparked+my+11x11+real-time+dream+for+analysis.++;Vision+in%2C+insights+out+%E2%80%94+that's+the+goal.++google+are+close+to+it.;Theory+vs.+scale+%E2%80%94+still+can't+decide+what+i+like+more.+++++;Bad+at+WLB%2C+good+at+Deploying%2C+i+think.;Creativity+%2B+curiosity+%3D+potential+spark.++;RMT+-+look+it+up%2C+it+will+change+the+world.+Probably.;LLMs+in+quantum+clouds%3F+Enterprise+ready.+++;Even+from+my+phone%2C+I+code+for+impact.+++++)](https://git.io/typing-svg)
 
 <div align="center"> 
   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=shovalbenjer.shovalbenjer" alt="Visitor Badge" />

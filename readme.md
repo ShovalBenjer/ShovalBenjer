@@ -86,7 +86,7 @@
       <td align="center">
         <img src="https://github.com/ShovalBenjer/ShovalBenjer/blob/main/plotly_real-time_simulation_demo.gif" alt="Big Data Stack with PySpark" height="150"/>
         <br/>
-        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (PySpark)</b></a>
+        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (Kafka & Spark)</b></a>
         <p>
           End-to-end big data processing with Spark, Hadoop, and Apache stack on local and cloud clusters.
         </p>
@@ -98,7 +98,7 @@
       <td align="center">
         <img src="BANKING.png" alt="Bank Product Changes project" height="150"/>
         <br/>
-        <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction"><b>Bank Product Changes</b></a>
+        <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction"><b>Bank Product Multivariate Classification for Insait.io</b></a>
         <p>Built time-series models for accurate bank product predictions.</p>
         <!-- Repo Card for Bank Product Changes -->
         <a href="https://github.com/ShovalBenjer/Bank-Change-Prediction">

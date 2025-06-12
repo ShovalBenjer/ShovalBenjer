@@ -1,3 +1,7 @@
+Of course! I've added your "Time Twist Visualizer" project to the top of your "Past Work" section and reorganized the table for a clean, balanced layout.
+
+Here is the updated code for your README:
+
 <div align="center"> 
   <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=shovalbenjer.shovalbenjer" alt="Visitor Badge" />
 </div>
@@ -39,8 +43,6 @@
   </a>
 </div>
 
-
-
 <hr/>
 
 <h2 align="center">🚀 Past Work 🚀</h2>
@@ -48,6 +50,17 @@
 <div align="center">
   <table>
     <tr>
+      <!-- Time Twist Visualizer (NEW) -->
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/b6febd8d-5506-4dd1-b0b5-a1615c81de9c" alt="Time Twist Visualizer project" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/time-twist-visualizer"><b>Time Twist Visualizer</b></a>
+        <p>A Rust-based TUI for visualizing Git commit history as an interactive graph.</p>
+        <!-- Repo Card for Time Twist Visualizer -->
+        <a href="https://github.com/ShovalBenjer/time-twist-visualizer">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=time-twist-visualizer&theme=cobalt" alt="Time Twist Visualizer Repo Card" />
+        </a>
+      </td>
       <!-- PhantomReach -->
       <td align="center">
         <img src="phantomreach.gif" alt="PhantomReach project animation" height="150"/>
@@ -82,18 +95,8 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=solosolve-ai&repo=solosolve-ai-demo&theme=cobalt" alt="SoloSolve AI Repo Card" />
         </a>
       </td>
-            <!-- Big Data Stack with PySpark -->
-      <td align="center">
-        <img src="https://github.com/ShovalBenjer/ShovalBenjer/blob/main/plotly_real-time_simulation_demo.gif" alt="Big Data Stack with PySpark" height="150"/>
-        <br/>
-        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (Kafka & Spark)</b></a>
-        <p>
-          End-to-end big data processing with Spark, Hadoop, and Apache stack on local and cloud clusters.
-        </p>
-        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache">
-          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Bigdata_Pyspark_Spark_Hadoop_Apache&theme=cobalt" alt="Big Data Stack Repo Card" />
-        </a>
-      </td>
+    </tr>
+    <tr>
       <!-- Bank Product Changes -->
       <td align="center">
         <img src="BANKING.png" alt="Bank Product Changes project" height="150"/>
@@ -105,8 +108,18 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Bank-Change-Prediction&theme=cobalt" alt="Bank Product Changes Repo Card" />
         </a>
       </td>
-    </tr>
-    <tr>
+      <!-- Big Data Stack with PySpark -->
+      <td align="center">
+        <img src="https://github.com/ShovalBenjer/ShovalBenjer/blob/main/plotly_real-time_simulation_demo.gif" alt="Big Data Stack with PySpark" height="150"/>
+        <br/>
+        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache"><b>Big Data Stack (Kafka & Spark)</b></a>
+        <p>
+          End-to-end big data processing with Spark, Hadoop, and Apache stack on local and cloud clusters.
+        </p>
+        <a href="https://github.com/ShovalBenjer/Bigdata_Pyspark_Spark_Hadoop_Apache">
+          <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Bigdata_Pyspark_Spark_Hadoop_Apache&theme=cobalt" alt="Big Data Stack Repo Card" />
+        </a>
+      </td>      
       <!-- Housing Price Prediction -->
       <td align="center">
         <img src="HOUSING.png" alt="Housing Price Prediction project" height="150"/>
@@ -118,6 +131,8 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Housing_Price_Prediction_Advanced_Regresson_Kaggle&theme=cobalt" alt="Housing Price Prediction Repo Card" />
         </a>
       </td>
+    </tr>
+    <tr>
       <!-- Catering Management -->
       <td align="center">
         <img src="DATABASE.jpg" alt="Catering Management project" height="150"/>
@@ -140,8 +155,6 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=CS_188-Introduction-to-Artificial-Intelligence-Final_Project&theme=cobalt" alt="Soccer Market Prediction Repo Card" />
         </a>
       </td>
-    </tr>
-    <tr>
       <!-- Warehouse Management -->
       <td align="center">
         <img src="GUI.png" alt="Warehouse Management project" height="150"/>
@@ -153,6 +166,8 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Manage-Warehouse-OOP-Python&theme=cobalt" alt="Warehouse Management Repo Card" />
         </a>
       </td>
+    </tr>
+    <tr>
       <!-- Algorithms / Dynamic Programming -->
       <td align="center">
         <img src="algorithms.png" alt="Algorithms & Dynamic Programming project" height="150"/>
@@ -164,6 +179,9 @@
           <img height="200" src="https://github-readme-stats.vercel.app/api/pin/?username=ShovalBenjer&repo=Algorithms_DynamicProgramming_Codechef_Competition_Submissions&theme=cobalt" alt="Algorithms DP Repo Card" />
         </a>
       </td>
+      <!-- Empty placeholders to keep alignment -->
+      <td></td>
+      <td></td>
     </tr>
   </table>
 </div>

@@ -21,7 +21,7 @@
 <h2 align="center">⚒️ Languages - Frameworks - Tools ⚒️</h2>
 <br/>
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,rust,mysql,fastapi,tailwind,postgres,kafka,html,css,nodejs,react,ts,tensorflow,pytorch,azure" alt="Languages, Frameworks, and Tools Icons" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,docker,elasticsearch,fastapi,rust,mysql,firebase,flask,gcp,git,githubactions,tailwind,postgres,kafka,html,css,nodejs,react,ts,js,sqlite,supabase,selenium,threejs,vscode,tensorflow,pytorch,azure" alt="Languages, Frameworks, and Tools Icons" />
   <br/>
   <hr/>
 </div>

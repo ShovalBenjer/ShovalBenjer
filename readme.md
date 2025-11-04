@@ -18,15 +18,9 @@
 
 <hr/>
 
-<h2 align="center">⚒️ Languages - Frameworks - Tools ⚒️</h2>
-<br/>
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,docker,elasticsearch,fastapi,flask,gcp,git,githubactions,postgres,kafka,sqlite,supabase,vscode,tensorflow,pytorch,azure" alt="Languages, Frameworks, and Tools Icons" />
-  <br/>
-  <hr/>
-</div>
 
-<h2 align="center">📊 Commit Statistics</h2>
+
+<h2 align="center"> Commit Statistics</h2>
 
 <div align="center">
 
@@ -43,7 +37,7 @@
 
 <hr/>
 
-<h2 align="center">🚀 Past Work 🚀</h2>
+<h2 align="center"> Past Work </h2>
 <br/>
 <div align="center">
   <table>

@@ -139,7 +139,7 @@ Tech stack badges: Python, Rust, Pandas, Scikit-Learn, FastAPI, PostgreSQL, AWS,
 
 | Repository | Image Markdown | Alt Text Issue | Severity |
 |-----------|---------------|---------------|----------|
-| `ShovalBenjer/ShovalBenjer` | `![SoloSolve AI](solosolve in a nutshell.gif)` | Non-descriptive (brand name only) | MEDIUM |
+| `ShovalBenjer/ShovalBenjer` | `![SoloSolve AI](solosolve in a nutshell.gif)` | Present but non-descriptive (brand name only) | MEDIUM |
 | `deep_learning_neural_networks` | `![image](...)` x64 | Generic "image" — non-descriptive | CRITICAL |
 | `phantom-reach` | `![demo](...)` x2 | Single word "demo" — non-descriptive | MEDIUM |
 | `Explorations_With_KAN` | `![image](...)` x1 | Generic "image" — non-descriptive | HIGH |
@@ -219,7 +219,7 @@ Tech stack badges: Python, Rust, Pandas, Scikit-Learn, FastAPI, PostgreSQL, AWS,
 - [ ] Verify GitHub meta description update (may require API bio change via GitHub support)
 - [ ] Confirm pinned repos now display own work correctly
 
-**Month 2 (Polish & Monitoring):**
+**Month 2 (Polish & Monitoring)**
 - [ ] Add structured data (schema.org Person) to profile README if supported
 - [ ] Quarterly review of repository topics
 - [ ] Set up Google Search Console monitoring for profile appearance

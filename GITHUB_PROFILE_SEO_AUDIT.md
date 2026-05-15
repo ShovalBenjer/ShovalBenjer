@@ -120,10 +120,10 @@ Tech stack badges: Python, Rust, Pandas, Scikit-Learn, FastAPI, PostgreSQL, AWS,
 | `Catering_Company_Management_System` | `oop`, `python`, `enterprise`, `management-system` |
 | `crowd-transcribe` (fork) | `transcription`, `audio`, `crowdsourcing` |
 | `CS_188-Introduction-to-Artificial-Intelligence-Final_Project` | `ai`, `education`, `ucla`, `reinforcement-learning` |
-| `Housing_Price_Prediction_Advanced_Regresson_Kaggle` | `kaggle`, `regression`, `housing`, `competition`, `real-estate` |
+| `Housing_Price_Prediction_Advanced_Regression_Kaggle` | `kaggle`, `regression`, `housing`, `competition`, `real-estate` |
 | `LeetCode_C_Python_SQL` | `leetcode`, `algorithms`, `interview-prep`, `c`, `python`, `sql` |
 | `Manage-Warehouse-OOP-Python` | `oop`, `warehouse`, `inventory`, `python`, `supply-chain` |
-| `Natural_Language_Proccessing_NLP_Projects` | `nlp`, `natural-language-processing`, `bert`, `transformers`, `language-models` |
+| `Natural_Language_Processing_NLP_Projects` | `nlp`, `natural-language-processing`, `bert`, `transformers`, `language-models` |
 | `next.py-solution-campusil` | `python`, `education`, `campusil`, `israel-tech` |
 | `pull-request-podcast` (fork) | `podcast`, `github`, `community`, `open-source` |
 

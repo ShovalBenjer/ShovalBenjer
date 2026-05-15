@@ -2,7 +2,7 @@
 
 # Shoval Benjer
 
-**Solution Engineer** · Architecture & Data · Financial & Predictive AI
+**AI Engineer** · Architecture & Data · Financial & Predictive AI 
 
 <a href="https://github.com/ShovalBenjer">
 <img src="https://ghchart.rshah.org/9000ADC/ShovalBenjer" alt="ShovalBenjer contributions" />

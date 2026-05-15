@@ -1,0 +1,342 @@
+name: Profile Health Monitor
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+  schedule:
+    # Run daily at 9 AM UTC for broken links and SEO
+    - cron: '0 9 * * *'
+    # Run weekly on Mondays for badge uptime
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+    inputs:
+      check-type:
+        description: 'Type of check to run'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - links
+          - badges
+          - seo
+          - lint
+
+jobs:
+  readme-lint:
+    name: README Linter
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.inputs.check-type == 'all' || github.event.inputs.check-type == 'lint'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      - name: Lint README.md
+        run: |
+          markdownlint README.md || true
+          echo "Linting complete. Review warnings above."
+
+  broken-links:
+    name: Broken Link Checker
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.check-type == 'all' || github.event.inputs.check-type == 'links'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install link checker
+        run: |
+          pip install pymarkdown
+          pip install requests beautifulsoup4
+
+      - name: Extract and check links
+        run: |
+          python - <<'EOF'
+          import re
+          import requests
+          from urllib.parse import urlparse
+          import sys
+
+          # Allowed domains (profile-specific)
+          ALLOWED_DOMAINS = {
+              'github.com', 'githubusercontent.com', 'shovalbenjer.github.io',
+              'ghchart.rshah.org', 'github-readme-stats.vercel.app',
+              'admaven-demo.fly.dev', 'fly.dev', 'linkedin.com',
+              'img.shields.io', 'gist.githubusercontent.com'
+          }
+
+          # Non-critical external resources that may timeout
+          NON_CRITICAL = {'linkedin.com'}
+
+          broken = []
+          warnings = []
+
+          with open('README.md') as f:
+              content = f.read()
+
+          # Extract all markdown and HTML links
+          link_patterns = [
+              r'\[([^\]]+)\]\(([^)]+)\)',  # Markdown links
+              r'src=["\']([^"\']+)["\']',  # HTML src
+              r'href=["\']([^"\']+)["\']', # HTML href
+          ]
+
+          found_urls = set()
+          for pattern in link_patterns:
+              for match in re.finditer(pattern, content):
+                  url = match.group(1) if 'src=' in pattern or 'href=' in pattern else match.group(2)
+                  found_urls.add(url)
+
+          print(f"Checking {len(found_urls)} unique URLs...")
+
+          for url in sorted(found_urls):
+              try:
+                  parsed = urlparse(url)
+                  domain = parsed.netloc.lower()
+
+                  # Skip non-HTTP links and anchors
+                  if not parsed.scheme or parsed.scheme not in ('http', 'https'):
+                      continue
+
+                  # Check if domain is allowed
+                  if not any(domain.endswith(d) or d in domain for d in ALLOWED_DOMAINS):
+                      warnings.append(f"External domain not in allowlist: {url}")
+                      continue
+
+                  # Make request
+                  timeout = 10 if domain in NON_CRITICAL else 5
+                  response = requests.head(url, timeout=timeout, allow_redirects=True)
+
+                  if response.status_code >= 400:
+                      broken.append(f"BROKEN ({response.status_code}): {url}")
+                  elif response.status_code < 400:
+                      print(f"  OK ({response.status_code}): {url}")
+
+              except requests.exceptions.Timeout:
+                  if any(domain in url for domain in NON_CRITICAL):
+                      warnings.append(f"TIMEOUT (non-critical, may be OK): {url}")
+                  else:
+                      broken.append(f"TIMEOUT: {url}")
+              except Exception as e:
+                  broken.append(f"ERROR: {url} - {str(e)}")
+
+          print("\n" + "="*60)
+          if broken:
+              print("❌ BROKEN LINKS FOUND:")
+              for b in broken:
+                  print(f"  {b}")
+              print(f"\nTotal broken: {len(broken)}")
+              sys.exit(1)
+          else:
+              print("✅ All links are healthy!")
+
+          if warnings:
+              print("\n⚠️  Warnings:")
+              for w in warnings:
+                  print(f"  {w}")
+
+          sys.exit(0)
+          EOF
+
+  demo-uptime:
+    name: Deployed Demo Health Check
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.check-type == 'all' || github.event.inputs.check-type == 'badges'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check demo endpoints
+        run: |
+          python - <<'EOF'
+          import requests
+          import sys
+
+          # Known deployed demos from README
+          DEMO_URLS = {
+              'AdMaven ETL Dashboard': 'https://admaven-demo.fly.dev/',
+          }
+
+          print("🏥 Deployed Demo Health Check\n" + "="*60)
+          print(f"Checking {len(DEMO_URLS)} deployed demo(s)...\n")
+
+          failed = []
+          healthy = []
+
+          for name, url in DEMO_URLS.items():
+              try:
+                  timeout = 15
+                  response = requests.get(url, timeout=timeout, allow_redirects=True)
+
+                  if response.status_code >= 400:
+                      failed.append(f"{name} (HTTP {response.status_code}): {url}")
+                  elif response.status_code < 200:
+                      failed.append(f"{name} (Invalid response): {url}")
+                  else:
+                      healthy.append(name)
+                      print(f"  ✅ {name}")
+                      print(f"     {url} (status: {response.status_code})")
+
+              except requests.exceptions.Timeout:
+                  failed.append(f"{name} (TIMEOUT): {url}")
+              except requests.exceptions.ConnectionError:
+                  failed.append(f"{name} (CONNECTION ERROR): {url}")
+              except Exception as e:
+                  failed.append(f"{name} (ERROR: {e}): {url}")
+
+          print("\n" + "="*60)
+          if failed:
+              print("❌ Failed demos:")
+              for f in failed:
+                  print(f"  • {f}")
+              print(f"\nTotal failed: {len(failed)}")
+              sys.exit(1)
+          else:
+              print(f"✅ All {len(healthy)} demo(s) are healthy!")
+              sys.exit(0)
+          EOF
+
+  seo-check:
+    name: SEO & Discoverability Checker
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.check-type == 'all' || github.event.inputs.check-type == 'seo'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check SEO & profile health
+        run: |
+          python - <<'EOF'
+          import re
+          import sys
+
+          REQUIRED_KEYWORDS = ['DevOps', 'IaC', 'Azure', 'Data Engineering', 'Python', 'AI', 'ML']
+          ISSUE_KEYWORDS = ['TODO', 'FIXME', 'HACK']
+
+          with open('README.md') as f:
+              content = f.read()
+
+          issues = []
+          warnings = []
+
+          # Check for required keywords
+          print("📊 SEO Keyword Analysis:")
+          for keyword in REQUIRED_KEYWORDS:
+              if keyword.lower() in content.lower():
+                  print(f"  ✅ Found: {keyword}")
+              else:
+                  issues.append(f"Missing core keyword: {keyword}")
+
+          # Check for code/placeholder comments
+          print("\n🔍 Code Quality Check:")
+          for keyword in ISSUE_KEYWORDS:
+              matches = re.findall(r'.{0,20}' + re.escape(keyword) + r'.{0,20}', content, re.IGNORECASE)
+              if matches:
+                  warnings.extend([f"Found '{keyword}': {m.strip()}" for m in matches])
+
+          # Check README sections
+          print("\n📋 Structure Validation:")
+          required_sections = ['Who I am', 'Tech Stack', 'Demos', 'Live Demo']
+          for section in required_sections:
+              if section in content:
+                  print(f"  ✅ Section found: {section}")
+              else:
+                  warnings.append(f"Missing section: {section}")
+
+          # Check badge URLs
+          badge_urls = re.findall(r'https://img\.shields\.io[^\s\)]+', content)
+          if badge_urls:
+              print(f"\n🏷️  Badge count: {len(badge_urls)}")
+
+          print("\n" + "="*60)
+          if issues:
+              print("❌ CRITICAL ISSUES:")
+              for issue in issues:
+                  print(f"  • {issue}")
+              sys.exit(1)
+          else:
+              print("✅ SEO check passed!")
+
+          if warnings:
+              print("\n⚠️  Warnings:")
+              for warning in warnings[:10]:
+                  print(f"  • {warning}")
+
+          sys.exit(0)
+          EOF
+
+  alert:
+    name: Send Alerts
+    needs: [readme-lint, broken-links, badge-uptime, demo-uptime, seo-check]
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Create alert issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const workflowRun = await github.rest.actions.getWorkflowRun({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId,
+            });
+
+            const failedJobs = Object.values(workflowRun.data.job_ids)
+              .map(async (jobId) => {
+                const job = await github.rest.actions.getJob({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  job_id: jobId,
+                });
+                return job.data;
+              });
+
+            const failedJobNames = (await Promise.all(failedJobs))
+              .filter(job => job.conclusion === 'failure')
+              .map(job => job.name);
+
+            const issueTitle = `🚨 Profile Health Alert - ${new Date().toISOString().split('T')[0]}`;
+            const issueBody = `
+            ## Profile Health Check Failed
+
+            **Workflow:** Profile Health Monitor
+            **Run:** #${workflowRun.data.run_number}
+            **Failed Checks:** ${failedJobNames.join(', ')}
+
+            ### Failed Jobs
+            ${failedJobNames.map(job => `- \`${job}\``).join('\n')}
+
+            **Time:** ${new Date().toISOString()}
+
+            Please review the [workflow run](${workflowRun.data.html_url}) for details.
+            `;
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: issueTitle,
+              body: issueBody,
+              labels: ['profile-health', 'automation', 'monitoring']
+            });
+
+            console.log(`Created alert issue #${issue.data.number}`);

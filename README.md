@@ -77,6 +77,14 @@ Built with FastAPI + async workers, PostgreSQL, Redis + Celery.
 
 ---
 
+## 🤝 Gastown Community
+
+Building on the [Gastown](https://github.com/ShovalBenjer/gastown) distributed agent framework. Contributing to Vancouver's tech ecosystem through open source tools and community collaboration.
+
+[**Gastown Community Guide**](GASTOWN.md) · [Contribution Guidelines](CONTRIBUTING.md)
+
+---
+
 <div align="center">
 
 Built with [GitHub Pages](https://pages.github.com/) · Hosted on [Fly.io](https://fly.io)

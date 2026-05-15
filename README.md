@@ -11,7 +11,7 @@
 [![Email](https://img.shields.io/badge/Email-Shovalb9%40gmail.com-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:Shovalb9@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shoval-benjer-712894b9)
 
-**Tech Stack** — `Python` `Rust` `Pandas` `Scikit-Learn` `FastAPI` `PostgreSQL` `AWS` `Kubernetes`
+**Tech Stack** — `Python` `Rust` `Pandas` `Scikit-Learn` `FastAPI` `PostgreSQL` `AWS` `Kubernetes` `Terraform` `Bicep` `Helm` `Istio` `GitHub Actions` `Azure DevOps`
 
 </div>
 
@@ -40,6 +40,17 @@ Solve hard problems: ad-tech analytics → financial risk modeling → real-time
 |---|---|
 | **[Altius Financial Analysis](https://github.com/ShovalBenjer/altius-financial-analysis)** <br> `Python` · `Pandas` · `Financial Modeling` | Automated financial statement analysis. Ratio analysis, trend forecasting, solvency scoring from raw statements. |
 | **[Bank Product Prediction](https://github.com/ShovalBenjer/Bank-Change-Prediction)** <br> `Scikit-Learn` · `Time-Series` · `ML` | Multivariate classification for banking products — temporal feature engineering for churn prediction. |
+
+---
+
+## 🔧 DevOps & Azure Infrastructure
+
+| Project | Description |
+|---|---|
+| **[Terraform Azure AKS](/_terraform-azure-aks/)** <br> `Terraform` · `Azure` · `AKS` | Opinionated Terraform module for provisioning production-grade AKS clusters with monitoring, networking, and RBAC best practices. |
+| **[Bicep Azure Infra](/_bicep-azure-infra/)** <br> `Bicep` · `IaC` · `Azure` | Reusable Bicep modules and templates for Azure Container Apps, Function Apps, storage, networking, and Kubernetes deployments. |
+| **[GitHub Actions CI/CD](/_github-actions-cicd/)** <br> `GitHub Actions` · `Azure DevOps` · `Docker` | End-to-end CI/CD pipelines with automated builds, multi-environment deployments, Terraform/Bicep validation, and container publishing to ACR/GHCR. |
+| **[Helm Charts & Service Mesh](/_helm-charts-service-mesh/)** <br> `Helm` · `Kubernetes` · `Istio` | Production-ready Helm charts and Istio service mesh configurations with observability stack (Prometheus, Grafana, Jaeger) and GitOps support. |
 
 ---
 

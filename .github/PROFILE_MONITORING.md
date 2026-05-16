@@ -86,3 +86,12 @@ python profile-health-monitor.py --check-seo
 | Badges | Daily | 09:00 |
 | Demos | Daily | 09:00 |
 | SEO | Daily | 09:00 |
+
+## Badge Uptime Monitoring
+
+Badge uptime checks verify that dynamic badges from services like Shields.io, GitHub Readme Stats, and GHChart render correctly. Failed badges appear as broken images on the profile.
+
+### Badge Sources Monitored
+- `img.shields.io` - Static and dynamic badges
+- `ghchart.rshah.org` - Contribution chart badges  
+- `github-readme-stats.vercel.app` - GitHub stats and top languages

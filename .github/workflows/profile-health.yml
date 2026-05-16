@@ -72,7 +72,6 @@ jobs:
           from urllib.parse import urlparse
           import sys
 
-          # Allowed domains (profile-specific)
           ALLOWED_DOMAINS = {
               'github.com', 'githubusercontent.com', 'shovalbenjer.github.io',
               'ghchart.rshah.org', 'github-readme-stats.vercel.app',
@@ -80,7 +79,6 @@ jobs:
               'img.shields.io', 'gist.githubusercontent.com'
           }
 
-          # Non-critical external resources that may timeout
           NON_CRITICAL = {'linkedin.com'}
 
           broken = []
@@ -89,11 +87,10 @@ jobs:
           with open('README.md') as f:
               content = f.read()
 
-          # Extract all markdown and HTML links
           link_patterns = [
-              r'\[([^\]]+)\]\(([^)]+)\)',  # Markdown links
-              r'src=["\']([^"\']+)["\']',  # HTML src
-              r'href=["\']([^"\']+)["\']', # HTML href
+              r'\[([^\]]+)\]\(([^)]+)\)',
+              r'src=["\']([^"\']+)["\']',
+              r'href=["\']([^"\']+)["\']',
           ]
 
           found_urls = set()
@@ -109,16 +106,13 @@ jobs:
                   parsed = urlparse(url)
                   domain = parsed.netloc.lower()
 
-                  # Skip non-HTTP links and anchors
                   if not parsed.scheme or parsed.scheme not in ('http', 'https'):
                       continue
 
-                  # Check if domain is allowed
                   if not any(domain.endswith(d) or d in domain for d in ALLOWED_DOMAINS):
                       warnings.append(f"External domain not in allowlist: {url}")
                       continue
 
-                  # Make request
                   timeout = 10 if domain in NON_CRITICAL else 5
                   response = requests.head(url, timeout=timeout, allow_redirects=True)
 
@@ -153,6 +147,70 @@ jobs:
           sys.exit(0)
           EOF
 
+  badge-uptime:
+    name: Badge Uptime Monitor
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.check-type == 'all' || github.event.inputs.check-type == 'badges'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install requests
+
+      - name: Check badge uptime
+        run: |
+          python - <<'EOF'
+          import re
+          import requests
+          import sys
+
+          BADGE_PATTERNS = [
+              r'https://img\.shields\.io/badge/[^\s\)]+',
+              r'https://ghchart\.rshah\.org/[^\s\)]+',
+              r'https://github-readme-stats\.vercel\.app/api[^\s\)]+',
+          ]
+
+          with open('README.md') as f:
+              content = f.read()
+
+          badge_urls = set()
+          for pattern in BADGE_PATTERNS:
+              badge_urls.update(re.findall(pattern, content))
+
+          print("🏷️  Badge Uptime Check\n" + "="*60)
+          print(f"Checking {len(badge_urls)} badge(s)...\n")
+
+          failed = []
+          for badge_url in badge_urls:
+              try:
+                  response = requests.head(badge_url, timeout=10, allow_redirects=True)
+                  if response.status_code >= 400:
+                      failed.append(f"HTTP {response.status_code}: {badge_url[:60]}")
+                  else:
+                      print(f"  ✅ {badge_url[:60]}")
+              except requests.exceptions.Timeout:
+                  failed.append(f"TIMEOUT: {badge_url[:60]}")
+              except Exception as e:
+                  failed.append(f"ERROR: {str(e)[:20]} - {badge_url[:40]}")
+
+          print("\n" + "="*60)
+          if failed:
+              print("❌ Failed badges:")
+              for f in failed:
+                  print(f"  • {f}")
+              print(f"\nTotal failed: {len(failed)}")
+              sys.exit(1)
+          else:
+              print(f"✅ All {len(badge_urls)} badge(s) are healthy!")
+              sys.exit(0)
+          EOF
+
   demo-uptime:
     name: Deployed Demo Health Check
     runs-on: ubuntu-latest
@@ -161,13 +219,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install requests
+        run: pip install requests
+
       - name: Check demo endpoints
         run: |
           python - <<'EOF'
           import requests
           import sys
 
-          # Known deployed demos from README
           DEMO_URLS = {
               'AdMaven ETL Dashboard': 'https://admaven-demo.fly.dev/',
           }
@@ -239,7 +304,6 @@ jobs:
           issues = []
           warnings = []
 
-          # Check for required keywords
           print("📊 SEO Keyword Analysis:")
           for keyword in REQUIRED_KEYWORDS:
               if keyword.lower() in content.lower():
@@ -247,14 +311,12 @@ jobs:
               else:
                   issues.append(f"Missing core keyword: {keyword}")
 
-          # Check for code/placeholder comments
           print("\n🔍 Code Quality Check:")
           for keyword in ISSUE_KEYWORDS:
               matches = re.findall(r'.{0,20}' + re.escape(keyword) + r'.{0,20}', content, re.IGNORECASE)
               if matches:
                   warnings.extend([f"Found '{keyword}': {m.strip()}" for m in matches])
 
-          # Check README sections
           print("\n📋 Structure Validation:")
           required_sections = ['Who I am', 'Tech Stack', 'Demos', 'Live Demo']
           for section in required_sections:
@@ -263,7 +325,6 @@ jobs:
               else:
                   warnings.append(f"Missing section: {section}")
 
-          # Check badge URLs
           badge_urls = re.findall(r'https://img\.shields\.io[^\s\)]+', content)
           if badge_urls:
               print(f"\n🏷️  Badge count: {len(badge_urls)}")

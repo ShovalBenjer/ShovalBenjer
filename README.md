@@ -58,22 +58,3 @@ A minimal interface showing real-time pipeline status and ingestion metrics.
 🔗 **[https://admaven-demo.fly.dev/](https://admaven-demo.fly.dev/)**
 
 Built with FastAPI + async workers, PostgreSQL, Redis + Celery.
-
----
-
-## GitHub Stats
-
-<!-- Use these card widgets — they'll render dynamically -->
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ShovalBenjer&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" height="180" alt="GitHub Activity" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShovalBenjer&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="Top Languages" />
-
-</div>
-
-<div align="center">
-
-Built with [GitHub Pages](https://pages.github.com/) · Hosted on [Fly.io](https://fly.io)
-
-</div>

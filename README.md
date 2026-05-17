@@ -4,7 +4,7 @@
 
 **AI Engineer · Agentic Systems · Data Platform · IaC**
 <br/>
-<sub>Tel Aviv, Israel · open to senior roles & MSc research collabs</sub>
+<sub>Tel Aviv, Israel</sub>
 
 <a href="https://github.com/ShovalBenjer">
 <img src="https://ghchart.rshah.org/9000ADC/ShovalBenjer" alt="ShovalBenjer GitHub contribution graph" width="780" />
@@ -25,7 +25,7 @@
 
 Day-to-day I'm on multi-eval, centralized MCP, video-generation flows, and A2A across computer-use agents with cloud-based scheduling. A lot of the work is agentic security across the stack — code, pipeline (DevOps), deployed infra (Bicep / Terraform), data-level leakage (PII in transcripts), and agent-token guardrails: prompt instructions, structured hierarchical tooling.
 
-Still in awe of formal math notation. MSc supervision and research collabs always welcome — DMs open.
+Still in awe of formal math notation. Research collabs and MSc discussions always welcome — DMs open.
 
 ### Architecture & Data Engineering
 

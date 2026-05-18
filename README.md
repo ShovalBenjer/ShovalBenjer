@@ -2,16 +2,18 @@
 
 # Shoval Benjer
 
-AI Engineer · Data Platform Architecture · IaC · SDLC
+**AI Engineer · Agentic Systems · Data Platform · IaC**
+<br/>
+<sub>Tel Aviv, Israel</sub>
 
 <a href="https://github.com/ShovalBenjer">
-<img src="https://ghchart.rshah.org/9000ADC/ShovalBenjer" alt="ShovalBenjer contributions" />
+<img src="https://ghchart.rshah.org/9000ADC/ShovalBenjer" alt="ShovalBenjer GitHub contribution graph" width="780" />
 </a>
 
 [![Email](https://img.shields.io/badge/Email-Shovalb9%40gmail.com-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:Shovalb9@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shoval-benjer-712894b9)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shoval-benjer-712894b9)
 
-**Tech Stack** — `Python` `Rust` `PostgreSQL` `AWS` `Azure` `Kubernetes` `Terraform` `CI/CD` `IaC` `SDLC`
+`Python` · `Rust` · `PostgreSQL` · `Azure` · `AWS` · `Kubernetes` · `Terraform` · `Bicep` · `LLMs` · `MCP` · `FastAPI`
 
 </div>
 
@@ -19,43 +21,54 @@ AI Engineer · Data Platform Architecture · IaC · SDLC
 
 ## About
 
-I think 2027 will be around optimizing around human related metadata for example creating your work insights based on your data and autonomous scheduling acts on it. Chat-interface is decaying, and workflows styled agentic is the main meta approach, but internal business end-user implementations are difficult because of popular global trends: AI Jobless boom spoken by none other of Geoffrey Hinton, a living fossil aka Godfather of AI. 
+2027 looks like the year we stop staring at chat windows and start optimizing around the human metadata behind them — work insights from your own activity, autonomous scheduling that acts on them. Agentic is the new meta; the hard part is shipping it inside a real business, especially with what Hinton keeps calling the *AI jobless boom* creeping in.
 
-Currently handling multi-eval,centralized MCP, video generation flows, and A2A across sys computer used agents cloud based scheduling. Handling and learning about Agentic security in Code, pipeline(devops),resource/deployed bicep(terraform), Data level (e.g credit card leaked in transcription, and Agent token level - guardrails, prompt instructions,structured hierarchal tooling). 
+Day-to-day I'm on multi-eval, centralized MCP, video-generation flows, and A2A across computer-use agents with cloud-based scheduling. A lot of the work is agentic security across the stack — code, pipeline (DevOps), deployed infra (Bicep / Terraform), data-level leakage (PII in transcripts), and agent-token guardrails: prompt instructions, structured hierarchical tooling.
 
-As for 2026 I’m still scared and aroused from mathematical notations and formalization. Ms suggestions/research colabs are always welcomed in dm. 
+Still in awe of formal math notation. Research collabs and MSc discussions always welcome — DMs open.
 
 ### Architecture & Data Engineering
 
 | Project | Description |
 |---|---|
-| **[AdMaven Data Engineering](https://github.com/ShovalBenjer/admaven-python-data-engineering)** <br> `Python` · `ETL` · `Data Warehousing` | Robust ETL framework for high-volume ad-tech data. Automated ingestion, cleaning, schema normalization with recovery mechanisms. |
-| **[Time Twist Visualizer](https://github.com/ShovalBenjer/time-twist-visualizer)** <br> `Rust` · `TUI` · `Git Architecture` | High-performance TUI visualizing Git commit history as an interactive graph. Memory-efficient terminal rendering. |
+| **[AdMaven Data Engineering](https://github.com/ShovalBenjer/admaven-python-data-engineering)** <br/> `Python` · `ETL` · `Data Warehousing` | ETL framework for high-volume ad-tech data. Automated ingestion, schema normalization, and recovery built in. |
+| **[Time Twist Visualizer](https://github.com/ShovalBenjer/time-twist-visualizer)** <br/> `Rust` · `TUI` · `Git` | Terminal UI that renders Git history as an interactive graph. Memory-efficient on large repos. |
 
 ### Financial & Predictive AI
 
 | Project | Description |
 |---|---|
-| **[Altius Financial Analysis](https://github.com/ShovalBenjer/altius-financial-analysis)** <br> `Python` · `Pandas` · `Financial Modeling` | Automated financial statement analysis. Ratio analysis, trend forecasting, solvency scoring from raw statements. |
-| **[Bank Product Prediction](https://github.com/ShovalBenjer/Bank-Change-Prediction)** <br> `Scikit-Learn` · `Time-Series` · `ML` | Multivariate classification for banking products — temporal feature engineering for churn prediction. |
+| **[Altius Financial Analysis](https://github.com/ShovalBenjer/altius-financial-analysis)** <br/> `Python` · `Pandas` · `Modeling` | Automated statement analysis — ratios, trend forecasting, and solvency scoring from raw inputs. |
+| **[Bank Product Prediction](https://github.com/ShovalBenjer/Bank-Change-Prediction)** <br/> `scikit-learn` · `Time-Series` | Multivariate classification for retail-banking churn — temporal feature engineering on customer history. |
 
 ---
 
-## Demos & POCs
+## Demos
 
-| PhantomReach | SoloSolve AI |
-|---|---|
-| [AR Pose Detection (<100ms)](https://github.com/phantomreach/phantom-reach-poc) | [NLP Clustering for Support Tickets](https://github.com/solosolve-ai/solosolve-ai-demo) |
-| ![PhantomReach](phantomreach.gif) | ![SoloSolve AI](solosolve in a nutshell.gif) |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**[PhantomReach](https://github.com/phantomreach/phantom-reach-poc)** — sub-100ms AR pose detection for limb-difference rehab.
+
+<img src="phantomreach.gif" alt="PhantomReach AR pose detection running live on a webcam feed" width="100%" />
+
+</td>
+<td width="50%" valign="top">
+
+**[SoloSolve AI](https://github.com/solosolve-ai/solosolve-ai-demo)** — NLP clustering for customer-support ticket routing.
+
+<img src="solosolve%20in%20a%20nutshell.gif" alt="SoloSolve AI clustering customer-support tickets into routing categories" width="100%" />
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Live Demo
+## Live
 
-**AdMaven ETL Dashboard** — Deployed on **Fly.io**
+**AdMaven ETL Dashboard** — real-time pipeline status and ingestion metrics.
+FastAPI + async workers · PostgreSQL · Redis + Celery · deployed on Fly.io.
 
-A minimal interface showing real-time pipeline status and ingestion metrics.
-
-🔗 **[https://admaven-demo.fly.dev/](https://admaven-demo.fly.dev/)**
-
-Built with FastAPI + async workers, PostgreSQL, Redis + Celery.
+→ **[admaven-demo.fly.dev](https://admaven-demo.fly.dev/)**

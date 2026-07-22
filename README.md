@@ -1,16 +1,28 @@
-<div align="center">
+### Shoval Benjer, AI Engineer (Tel Aviv)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shoval-benjer-712894b9)
+I build production LLM agents and the automation around them: eval-gated support
+and CRM agents, an internal MCP layer over the business systems, call and content
+QC pipelines. Most of my public work is security and tooling for the agent
+ecosystem, since that is the part everyone is shipping fast and checking last.
 
-</div>
+**Now**, at i-sdd (Be Z Online): support, marketing, and sales-ops automations on
+Azure AI Foundry. Took one multilingual support agent's answer-quality pass rate
+from 24% to 64% under an eval gate, and built the internal MCP server the agents
+and analysts run through.
 
-## About
+**Public projects**
 
-Will the following year look like the year we stop staring at chat windows and start optimizing around the human metadata behind them?
+- [mcp-guard](https://github.com/ShovalBenjer/mcp-guard) — adversarial fuzzer for MCP servers. 65 findings against Anthropic's reference servers, published as a [leaderboard](https://github.com/ShovalBenjer/mcp-guard/blob/main/LEADERBOARD.md).
+- [sqltok](https://github.com/ShovalBenjer/sqltok) — schema token-budget manager for Text-to-SQL. Keeps 97% of gold tables at 2,000 tokens on BIRD.
+- [agenteval-bench](https://github.com/ShovalBenjer/agenteval-bench) — pytest-style eval suites for agents, with CI gating on regressions.
+- [protobuf-fuzz-guard](https://github.com/ShovalBenjer/protobuf-fuzz-guard) — CVE-pattern scanning and fuzz harnesses for .proto services (Python, C++, Go).
+- [altius](https://github.com/ShovalBenjer/altius-financial-analysis) — PE risk and forecasting (de-smoothing, Chronos, AutoGluon). [Live dashboard](https://lookerstudio.google.com/reporting/7b2515d4-9975-484f-a77f-1402f9e6d9b4).
 
-Meta work insights from your own activity, autonomous scheduling that acts on them. Agentic is the new meta; the hard part is shipping it inside a real business, especially with what Hinton keeps calling the *AI jobless boom* creeping in.
+**Stack**: Python, TypeScript, SQL · Azure (Foundry, Functions), AWS · MCP, A2A,
+RAG, LangGraph · PyTorch, LightGBM, QLoRA · Docker, Kubernetes, Bicep.
 
-Day-to-day I'm on multi-eval, centralized MCP, video-generation flows, and A2A across computer-use agents with cloud-based scheduling. A lot of the work is agentic security across the stack code, pipeline (DevOps), deployed infra (Bicep / Terraform), data-level leakage (PII in transcripts), and agent-token guardrails: prompt instructions, structured hierarchical tooling.
+A lot of the work is agentic security across the whole stack: code, DevOps
+pipeline, deployed infra, PII in transcripts, and agent-token guardrails. Open to
+research collabs and MSc discussions.
 
-Still in awe of formal math notation. Research collabs and MSc discussions always welcome DMs open.
-
+Reach me: [LinkedIn](https://www.linkedin.com/in/shoval-benjer) · shovalb9@gmail.com

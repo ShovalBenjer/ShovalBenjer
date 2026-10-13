@@ -27,6 +27,13 @@ know I am right?
 - **[agenteval-bench](https://github.com/Zion-sewers/agenteval-bench)** — pytest for agent outputs. Deterministic matchers, regression tracking, CI gates.
 - **[protobuf-fuzz-guard](https://github.com/Zion-sewers/protobuf-fuzz-guard)** — protobuf schema CVE scanning plus fuzz-harness generation in four languages.
 
+## The factory floor
+
+**[Watch the agents work →](https://github.com/orgs/Zion-sewers/projects/1/views/1)**
+
+The live Zion board. Every card, every office, zero hidden queues. This is where
+the work above actually happens.
+
 ---
 
 I think 2027 will be around optimizing around human related metadata for example creating your work insights based on your data and autonomous scheduling acts on it. Chat-interface is decaying, and workflows styled agentic is the main meta approach, but internal business end-user implementations are difficult because of popular global trends: AI Jobless boom spoken by none other of Geoffrey Hinton, a living fossil aka Godfather of AI.

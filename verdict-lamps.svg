@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 120" role="img" aria-label="How I check my own work: CONFIRMED, REFUTED, ABSTAINED">
+  <style>
+    .lamp { opacity: 0.25; }
+    .l1 { animation: l1 6s infinite; }
+    .l2 { animation: l2 6s infinite; }
+    .l3 { animation: l3 6s infinite; }
+    @keyframes l1 { 0%,8% { opacity: 0.25; } 12%,32% { opacity: 1; } 36%,100% { opacity: 0.25; } }
+    @keyframes l2 { 0%,36% { opacity: 0.25; } 40%,60% { opacity: 1; } 64%,100% { opacity: 0.25; } }
+    @keyframes l3 { 0%,64% { opacity: 0.25; } 68%,88% { opacity: 1; } 92%,100% { opacity: 0.25; } }
+    text { font-family: 'Space Grotesk', Inter, system-ui, sans-serif; }
+  </style>
+  <rect width="640" height="120" fill="#101210"/>
+  <text x="320" y="26" text-anchor="middle" font-size="15" letter-spacing="4" fill="#5C6B5A">HOW I CHECK MY OWN WORK</text>
+  <g>
+    <circle class="lamp l1" cx="140" cy="72" r="16" fill="#D9A13B"/>
+    <text x="140" y="104" text-anchor="middle" font-size="13" letter-spacing="2" fill="#F5F1E6">CONFIRMED</text>
+  </g>
+  <g>
+    <circle class="lamp l2" cx="320" cy="72" r="16" fill="#B3402A"/>
+    <text x="320" y="104" text-anchor="middle" font-size="13" letter-spacing="2" fill="#F5F1E6">REFUTED</text>
+  </g>
+  <g>
+    <circle class="lamp l3" cx="500" cy="72" r="16" fill="#5C6B5A"/>
+    <text x="500" y="104" text-anchor="middle" font-size="13" letter-spacing="2" fill="#F5F1E6">ABSTAINED</text>
+  </g>
+</svg>
